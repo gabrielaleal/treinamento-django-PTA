@@ -1,0 +1,36 @@
+{% load static %}
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Meu blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+    <div id="page-title"><h1>PTA Blog</h1></div>
+
+    <section>
+        {% for post in posts %}
+            <div class="post-container">
+                <div class="post-header">
+                    <div class="post-title">
+                        <h3>{{ post.title }}</h3>
+                    </div>
+                    <div class="post-subtitle">
+                        {{ post.author }}, {{post.created_at }}
+                    </div>
+                    <div class="post-subtitle">
+                            Última modificação: {{ post.updated_at }}
+                        </div>
+                </div>
+                <div class="post-content">
+                    {{ post.text }}
+                </div>
+            </div>
+        {% endfor %}
+    </section>
+</body>
+</html>

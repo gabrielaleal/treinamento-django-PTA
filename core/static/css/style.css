@@ -1,0 +1,46 @@
+/* 
+
+Colors
+pink: #ff5252
+grey: #bcbcbc
+
+*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    margin: 0;
+}
+
+#page-title {
+    color: #ff5252;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 7px 0;
+    border-bottom:1.5px solid #bcbcbc;
+}
+
+#page-title h1 {
+    margin: 0;
+}
+
+.post-container {
+    margin: 20px 50px;
+    padding: 15px;
+    border: 1px solid #bcbcbc;
+}
+
+.post-title h3 {
+    color: #ff5252;
+    margin: 0 0 5px 0;
+}
+
+.post-subtitle {
+    font-size: 13px;
+    color: #848282;
+    margin-bottom: 10px;
+}
+
+.post-content {
+    font-size: 14.5px;
+}
